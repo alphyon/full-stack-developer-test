@@ -44,3 +44,18 @@ ejecutar las siguientes comandos
 ``docker-compose exec phplumen2 cp artisan passport:install ``
 
 
+
+los accesos a los servicios son los siguientes:
+
+``
+http://localhost:8088 -- servicios manajeo de vehiculos
+``
+
+``
+http://localhost:8089 -- servicios manajeo de cuentas
+``
+
+``
+http://localhost:8087 -- login 
+``
+
