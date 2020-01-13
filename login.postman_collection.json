@@ -1,0 +1,234 @@
+{
+	"info": {
+		"_postman_id": "c9adbf6d-3732-4a0c-ba62-563a439e1ef8",
+		"name": "login",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"Jose\",\n\t\"password\":\"test123\",\n\t\"email\":\"test1e@gmail.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8087/register",
+					"host": [
+						"localhost"
+					],
+					"port": "8087",
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "register",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\":\"Jose\",\n\t\"password\":\"test123\",\n\t\"email\":\"test1e@gmail.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8087/register",
+							"host": [
+								"localhost"
+							],
+							"port": "8087",
+							"path": [
+								"register"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.16.1"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.1"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 13 Jan 2020 20:10:00 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Create User\",\n    \"data\": {\n        \"user\": {\n            \"name\": \"Jose\",\n            \"email\": \"test1e@gmail.com\",\n            \"updated_at\": \"2020-01-13 20:10:00\",\n            \"created_at\": \"2020-01-13 20:10:00\",\n            \"id\": 19\n        },\n        \"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMWE5YjYyMmQ4MGRmMmZmN2IyNTdhYTg1ZjE4N2Y0NGFjNTU3YmI0Y2QwMmRkYWEzNzYzMTRkNjQyODg0MDcwYmU2ZjU4NWYzN2UzNGRmYzAiLCJpYXQiOjE1Nzg5NDYyMDAsIm5iZiI6MTU3ODk0NjIwMCwiZXhwIjoxNjEwNTY4NjAwLCJzdWIiOiIxOSIsInNjb3BlcyI6W119.lGMMjAHwGpIAmzmF8S4lLqumUZRU9gWxhwrO6-k-hcbgN9CfSSIvuXlclaJV6gBSjNmr25vo-hS8kikRFMReE5X2_-1YzgX_erLFOUQX8A47-IsHV_PgAM_gicumE1Lf4SDxOSd5B7Dct7zE5hkoxf9ZV4yOgqLlnQYmwxLiaEwCaHyDWpsSf8TWXFrQjbX1tW7AEtiRj_sFuPe-hayMpUmNpA-S8TIjXs6qQbSuVtJMjw_C_8QT5hzVxA8O6lAu7c4bqzwAAm02QNBm_nA4_A96P2S98aWtdGOEEqYBWI3h7LLDWn2Yk7bfDllFaDArgo0WfhNtMlqCSg4ylVfbvxJ_A4-lBaSB6AMAIQHJrNdhgfyfXFiIr59hc6_cdCyyK3kMj6fQQignNCqRPgeE-R7yxkO-4LfAdXUR4nQII9GTGf78THB_vArd4_5lDYflmKjxjTueiTQKsvdwQITPGWaCmK-j5OQHqGQCYpBykQ2Y58tTHoPALqEF2l4hOYkCy50PCFoXd3DYpSse7k6dAEF9kW-K4PY1qsdyn5m3l274ujWg9Y6yXo_CpOFa3hWu6-eaB88kmPeL2jyTV4qWpuMVyODCr_yQ_rh0-fbgY_nhW49bBe6k5BC5SBhK_0EGRJr_EBjsKOnD8mJDS0kLOOjPE7U-uDlWsXBWr1SuWC0\"\n    },\n    \"error\": null,\n    \"status\": 201\n}"
+				}
+			]
+		},
+		{
+			"name": "token get",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"grant_type\":\"password\",\n\t\"client_id\":2,\n\t\"client_secret\":\"42W4Q5rWuLKOyVwOziLugFtDYhj5ZQXgHijHRecb\",\n\t\"password\":\"test123\",\n\t\"username\":\"test1e@gmail.com\",\n\t\"scope\":\"\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8087/v1/oauth/token",
+					"host": [
+						"localhost"
+					],
+					"port": "8087",
+					"path": [
+						"v1",
+						"oauth",
+						"token"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "token get",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"grant_type\":\"password\",\n\t\"client_id\":2,\n\t\"client_secret\":\"42W4Q5rWuLKOyVwOziLugFtDYhj5ZQXgHijHRecb\",\n\t\"password\":\"test123\",\n\t\"username\":\"test1e@gmail.com\",\n\t\"scope\":\"\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8087/v1/oauth/token",
+							"host": [
+								"localhost"
+							],
+							"port": "8087",
+							"path": [
+								"v1",
+								"oauth",
+								"token"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.16.1"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.1"
+						},
+						{
+							"key": "pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-store, private"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 13 Jan 2020 20:22:00 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"token_type\": \"Bearer\",\n    \"expires_in\": 31622400,\n    \"access_token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiNjQxOTUyZjIxNWUwOWRlZmVmMDk2NDcyNzg1ZWNiZjhhYWYxNTIwNTlkOGI2ZDQ3MTA5OTc5ZWU5YzM1Y2Q4MGQ3MDI3OWNlZGUwOGM4YzkiLCJpYXQiOjE1Nzg5NDY5MTksIm5iZiI6MTU3ODk0NjkxOSwiZXhwIjoxNjEwNTY5MzE5LCJzdWIiOiIxOSIsInNjb3BlcyI6W119.RIjM5DvrORWRPdY1F-A2E9U8tFxOi0v4a5wFErPrC1k8qr7wTqSey2uk1Uc04vWaATH1OGX2WjDqlWMbChUbrqIhaXmgnAPmbssrcYbG24b9l0vxoA1U3NEOltyAFXIBjwv6kH7Ej_-K1yb-WYbxQykdRniIkpccC7RYYdGJ6surkbjCgUlytZXk5lbQpRF7ZyQOwIml_rsFfD_82rEcAtVm92c3AU3StstDeMd2i0zgAKewNtoJiqjHXlS2R02tXkNetOiIOrnsw7VuWdbFlAHFyPcq4Bg3EZ4t6Q4wCv1etC8SzNALA2TrVBag7NtaLACAk_Q2Opz1zhdOtqSRy4CJBvJYK9aR5H6ANhKkvxxHllx-WW1_UmyCFGRlCwUaiq-_WK_TZOcTcf38Njq4oSz_5bztfVGYV2SKyZPPo17bhKNmQfd2IcgsdQd-Lbc8JpFn20sTGmFUW6ai9YR2fqsYiPPIMOF6fmSJJlsLICvelnMViDP3KKrcwaHZ60Gd-CKT5TtoYhduqiEoAv578QzvHSkYOHObwJAwoe5LWSqyXTDO1x6Rn5fhRdMNZFq85Ie6OwL1Urcu0Lm79SwjF5-D3OESogWFTeCz031vW_Bz59_y9_--GwX4povqA9A1MBDQ3AnFug2Ep40yJWXwWQYB81vbLRmWAGozcyVLY1M\",\n    \"refresh_token\": \"def50200843d5b1f6939cbab49968a3808ea97b3465bae964bf975715a10f45bb5793628cd496f5f2312865ab666a091270a13541869b88ef0b77a04426e1ed3f85681f5c4f3b2f3c1f51fbb4891510cc84ac1312e7b52e9c65e4e36ba2bf6b9f8811b02b015864e8b2088be519f2c68748867b2f46789ba011dfb25081250add487a84dc02421fb030f50b6fd86761470bde9e16be0eb87b4b569eb5b23dfff36daecc02e139fb83886b33f1a3b48841ee733ead8ab25879e75d4382b4bde735dbe7181c1deb8137fce2e4eebcefc6b15adc58e2a05fa5112376541d348930c99b4670ae3d37088ff253db254850ca6b565077845ba5c30ed8e3515f547a6bd783b7b239f8bc612be9f1688dd058eb646697ee10bc5ee84d3ed519332982c5337dd6392a08c65d93e90e752bf03bb1a22892f1e8ece1bff38037c053f28be313a74ee53ac9bd202b7a093224e07449f08ca0f865ada2d4c699cc2e5af9af1651825\"\n}"
+				}
+			]
+		}
+	],
+	"protocolProfileBehavior": {}
+}

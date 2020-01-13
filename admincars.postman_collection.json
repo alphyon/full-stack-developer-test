@@ -1,0 +1,212 @@
+{
+	"info": {
+		"_postman_id": "0e2e4ccc-0def-4df9-b7c7-fe2f56fe4d9b",
+		"name": "admincars",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "list all cars",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"juan\",\n\t\"age\":\"25\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8088/car/",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"car",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "save car",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\t\"license\":\"td-004\",\n        \"model\":\"honda fit\",\n        \"color\":\"black\",\n        \"owner\":\"Juan Perez\",\n        \"type\":\"5e1bac1f88554014d91b9417\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8088/car",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"car"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update car",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\n        \"owner\":\"Juan Martinez\",\n        \"type\":\"otro\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8088/car/5e1aa44c92815e29ef61cf7a",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"car",
+						"5e1aa44c92815e29ef61cf7a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete car",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8088/car/5e1aa61e075e0073474f0852",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"car",
+						"5e1aa61e075e0073474f0852"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create tipe park",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"owner\",\n\t\"description\":\"other type\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8088/park",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"park"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all parks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8088/park",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"park"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get one park",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8088/park/5e1b10387dc5f706960af1a2",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"park",
+						"5e1b10387dc5f706960af1a2"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
